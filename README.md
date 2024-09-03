@@ -38,7 +38,7 @@ After downloading the comboKR2.0 package, it can be installed by the following c
 
 ## Demo
 
-A small-scale demo based on O'Neil dataset [1] is provided in demo.py. Before running it, download and unpack the data_for_demo.zip. The expected runtime of the demo is about 20 minutes; much less if candidate set optimisation is used instead of the projected gradient descent. 
+A small-scale demo based on O'Neil dataset [1] is provided in demo.py. Before running it, download and unpack the data.zip. The expected runtime of the demo is about 20 minutes; much less if candidate set optimisation is used instead of the projected gradient descent. 
 
 
 [1] O'Neil, J., Benita, Y., Feldman, I., Chenard, M., Roberts, B., Liu, Y., ... & Shumway, S. D. (2016). An unbiased oncology compound screen to identify novel combination strategies. Molecular cancer therapeutics, 15(6), 1155-1162.
