@@ -14,6 +14,8 @@ An example of how to run comboKR 2.0 code. Skipping the cross-validation here!
 Based on O'Neil dataset
 """
 
+import warnings
+warnings.filterwarnings("ignore")
 
 # decide with which regularisation parameter (early stopping interations) to run the experiment
 n_iters = 5
@@ -97,17 +99,24 @@ combokr2.train(cdd_tr, braids_tr, n_iters)
 print("Starting to train and test")
 print("This might take a while due to the step of fitting BRAID surfaces to the GD solution..")
 t0 = time.process_time()
-preds, pred_braid_params = combokr2.predict_with_gd_nadam_and_braid(cdd_tst, c1_tst, c2_tst)
+# predict with projected gradient descent
+preds, pred_braid_params = combokr2.predict_with_gd_nadam_and_braid(cdd_tst, c1_tst, c2_tst)  # 0:18:54.285831
+# # predict with candidate set
+# preds, pred_braid_params = combokr2.predict_with_candidates(cdd_tst, c1_tst, c2_tst)  # 0:07:56.296070
 t1 = time.process_time()
-print("It took this long to train and test comboKR 2.0:", timedelta(seconds=t1-t0))  # 0:18:54.285831
+print("It took this long to train and test comboKR 2.0:", timedelta(seconds=t1-t0))
 
 # check how well it went
 print("Pearson correlation:", np.round(np.corrcoef(y_tst.ravel(), preds.ravel())[0, 1], 3))
 from scipy.stats import spearmanr
 print("Spearman correlation:", np.round(spearmanr(y_tst.ravel(), preds.ravel())[0], 3))
 
+# results with the "predict_with_gd_nadam_and_braid":
 # Pearson correlation: 0.939
 # Spearman correlation: 0.938
+# results with the "predict_with_candidates":
+# Pearson correlation: 0.935
+# Spearman correlation: 0.934
 
 import matplotlib.pyplot as plt
 plt.figure()
