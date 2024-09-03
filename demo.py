@@ -54,8 +54,8 @@ cdd_full = np.load("data/cdd_full.npy")
 # for the test data, load the dose concentrations and the measured responses at those concentrations
 # these have been vectorised; every row corresponds to one surface
 # full data arrays are again ordered as the cdd_full
-c1_all = np.load("data/conc1Median.npy")
-c2_all = np.load("data/conc2Median.npy")
+c1_all = np.load("data/conc1.npy")
+c2_all = np.load("data/conc2.npy")
 y_all = np.load("data/measurementsMedian.npy")
 
 # select the subsets of data for training and testing
