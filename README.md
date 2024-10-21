@@ -9,6 +9,8 @@ The code is developed with python 3.8.
 The main algorithm in scalable_comboKR.py is run with numpy 1.23.5, and scikit-learn 1.0.2. It relies on the RLScore (https://github.com/aatapa/RLScore) and synergy (https://github.com/djwooten/synergy) packages.
 The demo depends additionally on some other usual python packages, such as scipy and matplotlib. 
 
+Note! The RLScore package (0.8.2a0) needs to be installed manually (github clone + pip install), since the latest version is not available in PyPI.
+
 
 ## Installation guide
 
