@@ -4,4 +4,4 @@ scikit-learn>=1.4.0
 scipy>=1.9.3
 pytorch>=2.2.0
 rlscore>=0.8.2a0
-synergy>=0.5.1
+synergy==0.5.1
