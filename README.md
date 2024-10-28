@@ -4,7 +4,11 @@ A scaled-up version of the comboKR (https://github.com/aalto-ics-kepaco/comboKR/
 
 ## System requirements
 
-The code is developed with python 3.9. The main dependencies are the RLScore (https://github.com/aatapa/RLScore) and synergy (https://github.com/djwooten/synergy) packages. From these, the versions 0.8.2a (RLScore) and 0.5.1 (synergy) have been used. **Note**: synergy package is not backwards compatible! Newer versions than 0.5.1 currently exist, but using those will result in errors.  The RLScore package (0.8.2a0) is not available in PyPI!
+The code is developed with python 3.9. The main dependencies are the RLScore (https://github.com/aatapa/RLScore) and synergy (https://github.com/djwooten/synergy) packages. From these, the versions 0.8.2a (RLScore) and 0.5.1 (synergy) have been used. 
+
+**Note:** 
+- Synergy package is not backwards compatible! Newer versions than 0.5.1 currently exist, but using those will result in errors.
+- The RLScore package (0.8.2a0) is not available in PyPI!
 
 The main algorithm in scalable_comboKR.py has been run with numpy 1.23.5, and scikit-learn 1.0.2. The demo depends additionally on some other usual python packages, such as scipy and matplotlib. 
 
