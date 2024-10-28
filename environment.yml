@@ -1,0 +1,9 @@
+dependencies:
+  - python>=3.9
+  - numpy
+  - scipy
+  - scikit-learn
+  - pytorch
+  - pip:
+    - synergy==0.5.1
+    - git+https://github.com/aatapa/RLScore
