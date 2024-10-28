@@ -10,13 +10,13 @@ authors = [
 ]
 description = "ComboKR2.0 for predicting drug response surfaces"
 readme = "README.md"
-requires-python = ">=3.9.18"
+requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["numpy>=1.23.2", "scikit-learn>=1.4.0", "scipy>=1.9.3", "rlscore>=0.8.2a0", "synergy==0.5.1", "pytorch>=2.2.0"]
+dependencies = ["numpy", "scikit-learn", "scipy", "pytorch", {git="https://github.com/aatapa/RLScore", tag="v0.8.2a"}, "synergy==0.5.1"]
 
 [project.urls]
 Homepage = "https://github.com/aalto-ics-kepaco/comboKR2.0"
