@@ -14,6 +14,8 @@ The main algorithm in scalable_comboKR.py has been run with numpy 1.23.5, and sc
 
 ## Installation guide
 
+A suitable conda environment can be created with the provided yml file, with which the algorithm can then be used. Alternatively, the package can be installed with pip.
+
 Before installing the comboKR2.0 package make sure that latest versions of pip and build are installed:
 
 >`pip3 install --upgrade pip`
