@@ -4,6 +4,7 @@ dependencies:
   - scipy
   - scikit-learn
   - pytorch
+  - pip
   - pip:
     - synergy==0.5.1
     - git+https://github.com/aatapa/RLScore
