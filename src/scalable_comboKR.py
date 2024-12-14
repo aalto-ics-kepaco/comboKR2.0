@@ -8,8 +8,8 @@ from rlscore.learner import CGKronRLS
 
 from sklearn.metrics.pairwise import rbf_kernel, pairwise_distances
 
-from helpers import mat_to_vec, vec_to_mat, c_from_normalized_c
-from braid_surface_model_for_fit import braid_model_with_raw_c_input, MyBraidWithOptimisers, braid_model_with_log_c_input
+from .helpers import mat_to_vec, vec_to_mat, c_from_normalized_c
+from .braid_surface_model_for_fit import braid_model_with_raw_c_input, MyBraidWithOptimisers, braid_model_with_log_c_input
 
 # the code relies on some functionalities of the synergy package: https://github.com/djwooten/synergy
 # from the "braid_surface_model_for_fit" import
