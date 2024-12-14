@@ -16,7 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["numpy", "scikit-learn", "scipy", "pytorch", {git="https://github.com/aatapa/RLScore", tag="v0.8.2a"}, "synergy==0.5.1"]
+dependencies = ["numpy=1.26.4", "scikit-learn=1.5.2", "scipy=1.13.1", "pytorch=2.4.1", {git="https://github.com/aatapa/RLScore", tag="v0.8.2a"}, "synergy==0.5.1"]
 
 [project.urls]
 Homepage = "https://github.com/aalto-ics-kepaco/comboKR2.0"
