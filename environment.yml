@@ -3,11 +3,11 @@ channels:
   - conda-forge
 dependencies:
   - python>=3.9
-  - numpy=1.26.4 # RLScore
-  - scipy=1.13.1 # RLScore
-  - scikit-learn=1.5.2
-  - pytorch=2.4.1
-  - pip=24.3.1
+  - numpy==1.26.4 # RLScore
+  - scipy==1.13.1 # RLScore
+  - scikit-learn>=1.5.2
+  - pytorch>=2.4.1
+  - pip>=24.3.1
   - pip:
     - synergy==0.5.1
     - git+https://github.com/aatapa/RLScore==0.8.2a0
