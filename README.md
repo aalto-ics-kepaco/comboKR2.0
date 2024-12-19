@@ -34,7 +34,7 @@ There are two options for installing the comboKR package.
 
 #### Directly from the github
 
->`pip3 install git+https://github.com/aalto-ics-kepaco/comboKR2.0.git#egg=comboKR2.0`
+>`pip3 install git+https://github.com/aalto-ics-kepaco/comboKR2.0.git#egg=comboKR2
 
 #### Downloading from github
 
