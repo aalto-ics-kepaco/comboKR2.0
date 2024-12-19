@@ -8,7 +8,7 @@ The code is developed with python 3.9. The main dependencies are the RLScore (ht
 
 **Note:** 
 - Synergy package is not backwards compatible! Newer versions than 0.5.1 currently exist, but using those will result in errors.
-- The RLScore package (0.8.2a0) is not available in PyPI!
+- The RLScore package (0.8.2a0) is not available in PyPI! When installing the environment with pip, it should be installed separately.
 
 The main algorithm in scalable_comboKR.py has been run with numpy 1.23.5, and scikit-learn 1.0.2. The demo depends additionally on some other usual python packages, such as scipy and matplotlib. 
 
@@ -47,6 +47,10 @@ There are two options for installing the comboKR package.
 After downloading the comboKR2.0 package, it can be installed by the following command from the comboKR2.0 directory:
 
 >`pip3 install .`
+
+#### RLScore
+
+The RLScore package (https://github.com/aatapa/RLScore) has to be installed separately.
 
 ## Demo
 
